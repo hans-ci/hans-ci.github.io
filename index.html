@@ -1,1 +1,64 @@
-Welcome. Work in progress.
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Dronetest.io by hans-ci</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Dronetest.io</h1>
+        <h2>Autopilot hardware testing with Teutonic thoroughness.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/hans-ci" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-automated-testing" class="anchor" href="#welcome-to-automated-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to automated testing!</h3>
+
+<p>Dronetest is a set of Ruby scripts which executes per-commit and per-PR tests on real autopilot hardware. In addition, it supports long-term soak tests on selected branches (e.g. stable or master). It supports Mac OS and tiny Linux computers such as the <a href="http://www.intel.com/content/www/us/en/compute-stick/intel-compute-stick.html">Intel Compute Stick</a>. After installing the prerequisites according to the <a href="https://github.com/hanssaurer/px4test/tree/master/README.md">README.md</a>, the test setup is quickly installed:</p>
+
+<pre><code>$ git clone https://github.com/hanssaurer/px4test.git
+$ cd px4test
+$ # Create the config.txt according to the README.md instructions
+$ ./run.sh # For a quick test
+$ # Or add watchdog.sh as a cron-job entry which will auto-update the script.
+</code></pre>
+
+<h3>
+<a id="testing-output" class="anchor" href="#testing-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing Output</h3>
+
+<p>The system generates a HTML report available for download and sends a summary via email. The report includes the console output of the autopilot and a GIF showing the led pattern.</p>
+
+<h3>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO</h3>
+
+<ul>
+<li>Stack dump / crash detection</li>
+<li>GDB / JTAG readout, parsing and reporting</li>
+<li>Runtime statistics for specific branches / commits to help bisection a bit (correlation assumptions..)</li>
+</ul>
+
+<h3>
+<a id="authors-and-contact" class="anchor" href="#authors-and-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contact</h3>
+
+<p>Hans Saurer (<a href="https://github.com/hanssaurer" class="user-mention">@hanssaurer</a>), Lorenz Meier (<a href="https://github.com/LorenzMeier" class="user-mention">@LorenzMeier</a>).</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
