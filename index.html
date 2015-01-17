@@ -29,7 +29,7 @@
         <h3>
 <a id="welcome-to-automated-testing" class="anchor" href="#welcome-to-automated-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to automated testing!</h3>
 
-<p>Dronetest is a set of Ruby scripts which executes per-commit and per-PR tests on real autopilot hardware. Its uses <a href="http://github.com/hanssaurer/px4test">Hans-CI</a> to apply teutonic thoroughness. In addition, it supports long-term soak tests on selected branches (e.g. stable or master). It supports Mac OS and tiny Linux computers such as the <a href="http://www.intel.com/content/www/us/en/compute-stick/intel-compute-stick.html">Intel Compute Stick</a>. After installing the prerequisites according to the <a href="https://github.com/hanssaurer/px4test/tree/master/README.md">README.md</a>, the test setup is quickly installed:</p>
+<p>Dronetest is a set of Ruby scripts which execute per-commit and per-pull-request tests on real autopilot hardware. It uses <a href="http://github.com/hanssaurer/px4test">Hans-CI</a> to apply teutonic thoroughness. In addition, it supports long-term soak tests on selected branches (e.g. stable or master). It supports Mac OS and tiny Linux computers such as the <a href="http://www.intel.com/content/www/us/en/compute-stick/intel-compute-stick.html">Intel Compute Stick</a>. After installing the prerequisites according to the <a href="https://github.com/hanssaurer/px4test/tree/master/README.md">README.md</a>, the test harness can be put to use with just very few commands:</p>
 
 <pre><code>$ git clone https://github.com/hanssaurer/px4test.git
 $ cd px4test
@@ -41,7 +41,7 @@ $ # Or add watchdog.sh as a cron-job entry which will auto-update the script.
 <h3>
 <a id="testing-output" class="anchor" href="#testing-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing Output</h3>
 
-<p>The system generates a HTML report available for download and sends a summary via email. The report includes the console output of the autopilot and a GIF showing the led pattern.</p>
+<p>The system generates a HTML report available for download and sends a summary via email. The report includes the console output of the autopilot and a GIF showing the led pattern (<a href="http://results.dronetest.io/zurich01/10/index.html">example report</a>).</p>
 
 <h3>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO</h3>
